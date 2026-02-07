@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.12",
     "@supabase/supabase-js": "^2.95.3",
     "framer-motion": "^12.33.0",
     "lucide-react": "^0.563.0",
