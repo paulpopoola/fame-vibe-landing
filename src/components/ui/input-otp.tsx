@@ -5,15 +5,13 @@ import { OTPInput, OTPInputContext } from "input-otp";
 import { MinusIcon } from "lucide-react";
 import { cn } from "./utils";
 
-interface InputOTPProps extends React.ComponentPropsWithoutRef<typeof OTPInput> {
-  containerClassName?: string;
-}
-
 function InputOTP({ 
   className, 
   containerClassName, 
   ...props 
-}: InputOTPProps) {
+}: React.ComponentProps<typeof OTPInput> & {
+  containerClassName?: string;
+}) {
   return (
     <OTPInput
       containerClassName={cn(
